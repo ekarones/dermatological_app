@@ -1,0 +1,25 @@
+{% extends "index.html" %} {% block content %}
+<div>
+  <div class="overlay">
+    <form method="post" action="/add_doctor">
+      <h1>Registro de Doctores</h1>
+      <h1>Datos Personales</h1>
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required /><br />
+      </div>
+      <div>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required /><br />
+      </div>
+      <div>
+        <label for="descripción">Descripcion:</label>
+        <input type="text" id="descripcion" name="descripcion" required /><br />
+      </div>
+      <div class="div__btn">
+        <button class="btn__send" type="submit">Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

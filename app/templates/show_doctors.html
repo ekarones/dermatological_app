@@ -1,0 +1,23 @@
+{% extends "index.html" %} {% block content %}
+<div>
+  <div class="overlay_2">
+    <h1>Doctores Registrados</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Descripción</th>
+        </tr>
+        {% for doctor in doctores %}
+        <tr>
+            <td>{{ doctor[0] }}</td>
+            <td>{{ doctor[1] }}</td>
+            <td>{{ doctor[2] }}</td>
+            <td>{{ doctor[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "index.html" %} {% block content %}
+<div>
+  <div class="overlay">
+    <form method="POST" action="/login_patient">
+      <h1>Acceso Paciente</h1>
+      <h1>Iniciar Sesión</h1>
+      <div>
+        <label for="documento">DNI:</label>
+        <input type="text" id="documento" name="documento" required /><br />
+      </div>
+      <div>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required /><br />
+      </div>
+      <div class="div__btn">
+        <button class="btn__send" type="submit">Ingresar</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

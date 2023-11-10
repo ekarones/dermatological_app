@@ -1,0 +1,22 @@
+{% extends "index.html" %} {% block content %}
+<div>
+  <div class="overlay">
+    <h1>Bienvenid@: <u>{{paciente_name}}</u></h1>
+    <br />
+    <h2>Cargar una Imagen</h2>
+    <br />
+    <form method="POST" action="/mostrar_imagen/{{paciente_id}}" enctype="multipart/form-data">
+      <input
+        type="file"
+        name="file"
+        accept=".png, .jpg, .jpeg, .gif"
+        required
+      />
+      <br />
+      <div class="div__btn">
+        <button class="btn__send" type="submit">Cargar</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

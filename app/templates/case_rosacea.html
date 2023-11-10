@@ -1,0 +1,40 @@
+{% extends "index.html" %} {% block content %}
+<div>
+  <div class="overlay_2">
+    <h2>Imagen Cargada</h2>
+
+    {% if image %}
+    <img
+      class="img_loaded"
+      src="data:image/png;base64,{{ image }}"
+      alt="Uploaded Image"
+    />
+    {% endif %}
+    <br />
+    <div class="div__result">
+      <h2>El resultado del análisis se refiere a: <u>{{mensaje}}</u></h2>
+      <div class="div__flex">
+        <img
+          src="{{ url_for('static', filename='images/rosacea.jpg') }}"
+          alt="Tu Imagen"
+        />
+        <div class="div__desc">
+          La rosácea es una enfermedad crónica de la piel que afecta
+          principalmente la cara, aunque también puede afectar los ojos. Se
+          caracteriza por episodios de enrojecimiento facial persistente, vasos
+          sanguíneos visibles (telangiectasias), pápulas (pequeñas
+          protuberancias rojas) y pústulas similares a las del acné. Los
+          síntomas pueden incluir sensaciones de ardor o picazón.
+        </div>
+      </div>
+    </div>
+    <div class="div__nota">
+      NOTA: El resultado es un diagnóstico presuntivo, es recomendable asistir
+      con su médico especialista. Es importante consultar a un profesional de la
+      salud para obtener un diagnóstico adecuado y un plan de tratamiento
+      apropiado.
+    </div>
+    <p>Diágnostigo guardado en el registro del paciente</p>
+  </div>
+</div>
+{% endblock %}

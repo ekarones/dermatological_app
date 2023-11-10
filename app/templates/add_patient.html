@@ -1,0 +1,51 @@
+{% extends "index.html" %} {% block content %}
+<div>
+  <div class="overlay">
+    <form method="post" action="/add_patient">
+      <h1>Registro de Pacientes</h1>
+      <h1>Datos Personales</h1>
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required /><br />
+      </div>
+      <div>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required /><br />
+      </div>
+      <div>
+        <label for="documento">DNI:</label>
+        <input type="text" id="documento" name="documento" required /><br />
+      </div>
+      <div>
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required /><br />
+      </div>
+      <div>
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input
+          type="date"
+          id="fecha_nacimiento"
+          name="fecha_nacimiento"
+          required
+        /><br />
+      </div>
+      <div>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required /><br />
+      </div>
+      <div>
+        <label for="contrasena">Contraseña:</label>
+        <input
+          type="password"
+          id="contrasena"
+          name="contrasena"
+          required
+        /><br />
+      </div>
+      <div class="div__btn">
+        <button class="btn__send" type="submit">Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
