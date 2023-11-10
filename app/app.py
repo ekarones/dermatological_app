@@ -175,4 +175,4 @@ def upload_image(paciente_id):
         return render_template('index.html')
 
 if __name__ == "__main__":
-    app.run(debug=True, port=500)
+    app.run(debug=True)
