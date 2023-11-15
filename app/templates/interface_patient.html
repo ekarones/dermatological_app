@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diagnóstico Primario</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="{{url_for('static',filename ='css/style.css')}}" />
+</head>
+
+<body>
+  <h1 class="title">
+    DIAGNÓSTICO PRIMARIO <br />
+    DE ENFERMEDADES DERMATOLÓGICAS
+  </h1>
+  <section class="section__1">
+    <div class="menu">
+      <ul class="nav__list">
+        <li><a href="{{ url_for('interface_patient',paciente_id = paciente_id) }}"><i class='bx bxs-home'></i>INICIO</a>
+        </li>
+        <li><a href="{{ url_for('predict_section', paciente_id = paciente_id) }}"><i class='bx bxs-search'></i>PREDECIR
+            ENFERMEDAD</a></li>
+        <li><a href="{{ url_for('index') }}"><i class='bx bxs-exit'></i>CERRAR SESIÓN</a></li>
+      </ul>
+    </div>
+    <div class="section__2">
+      <div class="div__1">
+        {% block content %} {% endblock %}
+      </div>
+      <div class="div__icons">
+        <div><i class="bx bxs-map"></i>Diagnóstico-Primario</div>
+        <div><i class="bx bxl-facebook-circle"></i>Diagnóstico-Primario</div>
+        <div><i class="bx bx bxl-twitter"></i>Diagnóstico-Primario</div>
+        <div><i class="bx bxl-instagram-alt"></i>Diagnóstico-Primario</div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

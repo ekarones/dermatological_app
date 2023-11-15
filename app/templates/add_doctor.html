@@ -1,4 +1,4 @@
-{% extends "index.html" %} {% block content %}
+{% extends "interface_staff.html" %} {% block content %}
 <div>
   <div class="overlay">
     <form method="post" action="/add_doctor">
@@ -15,6 +15,19 @@
       <div>
         <label for="descripción">Descripcion:</label>
         <input type="text" id="descripcion" name="descripcion" required /><br />
+      </div>
+      <div>
+        <label for="documento">DNI:</label>
+        <input type="text" id="documento" name="documento" required /><br />
+      </div>
+      <div>
+        <label for="contrasena">Contraseña:</label>
+        <input
+          type="password"
+          id="contrasena"
+          name="contrasena"
+          required
+        /><br />
       </div>
       <div class="div__btn">
         <button class="btn__send" type="submit">Guardar</button>

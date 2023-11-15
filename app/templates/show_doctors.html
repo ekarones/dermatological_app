@@ -1,4 +1,4 @@
-{% extends "index.html" %} {% block content %}
+{% extends "interface_staff.html" %} {% block content %}
 <div>
   <div class="overlay_2">
     <h1>Doctores Registrados</h1>
@@ -8,6 +8,8 @@
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Descripción</th>
+            <th>DNI</th>
+            <th>Contraseña</th>
         </tr>
         {% for doctor in doctores %}
         <tr>
@@ -15,6 +17,8 @@
             <td>{{ doctor[1] }}</td>
             <td>{{ doctor[2] }}</td>
             <td>{{ doctor[3] }}</td>
+            <td>{{ doctor[4] }}</td>
+            <td>{{ doctor[5] }}</td>
         </tr>
         {% endfor %}
     </table>

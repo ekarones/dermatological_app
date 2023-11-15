@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Questrial&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   padding: 10px 30px;
   background-color: lightgray;
@@ -19,26 +21,31 @@ body {
   border-bottom: solid 3px gray;
   margin-bottom: 10px;
 }
+
 .section__1 {
   flex: 1;
   display: grid;
   grid-template-columns: 20% 80%;
   grid-template-rows: 1fr;
 }
+
 .menu {
   background-color: grey;
   display: flex;
   align-items: center;
 }
+
 .nav__list {
   list-style: none;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+
 .nav__list li {
   border-bottom: 2px solid darkgray;
 }
+
 .nav__list li a {
   display: block;
   color: white;
@@ -48,17 +55,21 @@ body {
   font-size: 15px;
   font-family: "Questrial", sans-serif;
 }
+
 .nav__list li i {
   margin-right: 2px;
 }
+
 .nav__list li a:hover {
   background-color: lightgray;
 }
+
 .section__2 {
   display: grid;
   grid-template-rows: 95% 5%;
   grid-template-columns: 1fr;
 }
+
 .div__1 {
   position: relative;
   background-image: url("../images/bg_image.jpg");
@@ -66,6 +77,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -78,6 +90,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .overlay_2 {
   position: absolute;
   top: 0;
@@ -89,8 +102,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 }
+
 .div__icons {
   background-color: aliceblue;
   display: flex;
@@ -98,40 +111,53 @@ body {
   align-items: center;
   font-family: "Nunito", sans-serif;
 }
+
 .div__icons div {
   display: flex;
   align-items: center;
 }
+
 .div__icons div i {
   margin-right: 2px;
 }
-.overlay h1,.overlay_2 h1 {
+
+.overlay h1,
+.overlay_2 h1 {
   margin: 10px 0;
   text-align: center;
   font-size: 30px;
   font-family: "Questrial", sans-serif;
   justify-content: center;
 }
-.overlay h2, .overlay_2 h2{
+
+.overlay h2,
+.overlay_2 h2 {
   font-family: "Questrial", sans-serif;
 }
-.overlay form, .overlay_2 form {
+
+.overlay form,
+.overlay_2 form {
   align-items: center;
   font-family: "Nunito", sans-serif;
 }
+
 label {
   width: 100%;
 }
-.overlay form div, .overlay_2 form div {
+
+.overlay form div,
+.overlay_2 form div {
   display: flex;
   margin: 10px 0;
 }
+
 form button {
   background-color: grey;
   border: none;
   padding: 10px 15px;
   color: white;
 }
+
 .btn__send {
   font-family: "Nunito", sans-serif;
   background-color: grey;
@@ -141,9 +167,11 @@ form button {
   transition: all 0.5s ease;
   cursor: pointer;
 }
+
 .btn__send:hover {
   background-color: lightgray;
 }
+
 .div__btn {
   display: flex;
   align-items: center;
@@ -163,6 +191,7 @@ td {
   padding: 5px;
   text-align: left;
 }
+
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
@@ -175,34 +204,40 @@ th {
   background-color: gray;
   color: #fff;
 }
-.img_loaded{
+
+.img_loaded {
   height: 100px;
   width: auto;
 }
-.div__result{
+
+.div__result {
   border: 2px solid black;
   border-radius: 15px;
   padding: 10px;
   width: 80%;
 }
-.div__result h2{
+
+.div__result h2 {
   padding: 10px;
   text-align: center;
 }
-.div__flex{
+
+.div__flex {
   display: flex;
 }
-.div__flex img{
+
+.div__flex img {
   width: 300px;
   border-radius: 15px;
 }
-.div__desc{
+
+.div__desc {
   padding: 15px;
   font-family: "Questrial", sans-serif;
   font-size: 15px;
 }
 
-.div__nota{
+.div__nota {
   font-family: "Questrial", sans-serif;
   border-radius: 15px;
   padding: 10px;
@@ -211,6 +246,32 @@ th {
   color: white;
   margin: 15px 0;
 }
-p{
+
+p {
   font-family: "Questrial", sans-serif;
+}
+
+.fondo-login {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/bg_image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-form {
+  border: 2px solid black;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.login-form a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
 }
