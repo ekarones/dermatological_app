@@ -63,6 +63,7 @@ def login_patient():
 def interface_patient(paciente_id):
     return render_template("interface_patient.html", paciente_id=paciente_id)
 
+
 @app.route("/login_staff", methods=["POST", "GET"])
 def login_staff():
     try:
@@ -91,9 +92,11 @@ def login_staff():
 
     return render_template("login_staff.html")
 
+
 @app.route("/interface_staff", methods=["POST", "GET"])
 def interface_staff():
     return render_template("interface_staff.html")
+
 
 @app.route("/add_patient", methods=["POST", "GET"])
 def add_patient():
