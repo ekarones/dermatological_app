@@ -7,6 +7,18 @@
 3. Ejecutar el archivo python .\app\app.py para iniciar la aplicación
 4. Abrir el navegador http://127.0.0.1:5000
 
+## COMANDOS
+
+pip install flask
+
+pip install opencv-python
+
+pip install -U scikit-learn
+
+pip install joblib
+
+pip install imgaug
+
 ## Requirements
 
 blinker==1.7.0
